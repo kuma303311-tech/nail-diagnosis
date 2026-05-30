@@ -1,1 +1,24 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  background: linear-gradient(135deg, #FFF0F5 0%, #FAE6F7 50%, #F0F0FF 100%);
+  min-height: 100vh;
+  font-family: 'Georgia', 'Noto Serif JP', serif;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease forwards;
+}
